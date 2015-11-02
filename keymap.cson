@@ -25,17 +25,24 @@
 # https://github.com/bevry/cson#what-is-cson
 
 'body':
-  'ctrl-w': ''
+  'ctrl-q': 'core:close'
+  'ctrl-w': 'unset!'
+  'ctrl-shift-W': 'unset!'
 
-# Expand region plugin
+  'alt-shift-+': 'pane:split-down'
+  'alt-+': 'pane:split-right'
+
 'atom-text-editor':
   'alt-up': 'expand-region:expand'
   'alt-down': 'expand-region:shrink'
+  'ctrl-w': 'expand-region:expand'
+  'ctrl-shift-W': 'unset!'
 
-# Windows, Splits, Tabs
+'atom-workspace atom-text-editor:not([mini])':
+  'alt-enter': 'editor:newline-below'
 
-# Convenient stuff
+'.platform-win32, .platform-linux':
+  'alt-1': 'tree-view:toggle'
 
-# Fuzzy searcher
 '.platform-linux':
   'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
