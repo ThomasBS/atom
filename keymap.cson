@@ -38,8 +38,12 @@
   'ctrl-w': 'expand-region:expand'
   'ctrl-shift-W': 'unset!'
 
+'atom-text-editor:not([mini])':
+  'ctrl-y': 'editor:delete-line'
+
 'atom-workspace atom-text-editor:not([mini])':
   'alt-enter': 'editor:newline-below'
+  'ctrl-d': 'editor:duplicate-lines'
 
 '.platform-win32, .platform-linux':
   'alt-1': 'tree-view:toggle'
